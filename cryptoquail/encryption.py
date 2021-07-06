@@ -1,5 +1,5 @@
 #CryptoQuail Encryption
-"""Encrypt and decrypt strings, bytes, images, or objects.
+"""Encrypt and decrypt strings, bytes, or Python objects.
 """
 
 import string as string_
@@ -34,13 +34,11 @@ def encrypt_string(string, key):
     newstring = base64.urlsafe_b64encode(bytes(newstring, encoding="utf-8")).decode()
     newstring = newstring[::-1]
     str1 = list(newstring)
-    str1[0] = chr(ord(str1[0]) + 1)
     return "".join(str1)
 def decrypt_string(string, key):
     if secrets.compare_digest(key, "") == True:
-        raise exceptions.EmptyKeyError("key must not be empty")
+        raise exceptions.EmptyKeyError("key must not be a null value")
     str1 = list(string)
-    str1[0] = chr(ord(str1[0]) - 1)
     string = "".join(str1)
     int_ = foobar.text2number(key) % 30
     keylist = []
@@ -79,24 +77,6 @@ def decrypt_bytes(_bytes, key):
     for i, val in enumerate(newbytes):
         newbytes[i] = foobar.crypt(val, keylist[i])
     return bytes(newbytes)
-def encrypt_image(image, key):
-    file = open(image, "rb")
-    temp = file.read()
-    a = bytearray(temp)
-    a = encrypt_bytes(a, key)
-    file.close()
-    file = open(image, "wb")
-    file.write(a)
-    file.close()
-def decrypt_image(image, key):
-    file = open(image, "rb")
-    temp = file.read()
-    a = bytearray(temp)
-    a = decrypt_bytes(a, key)
-    file.close()
-    file = open(image, "wb")
-    file.write(a)
-    file.close()
 def encrypt_object(_object, key):
     if secrets.compare_digest(key, "") == True:
         raise exceptions.EmptyKeyError("key must not be empty")
