@@ -1,13 +1,8 @@
 #CryptoQuail RSA
-"""
-Encrypts with the RSA cipher.
-Generate keys:
-https://www.cs.drexel.edu/~jpopyack/IntroCS/HW/RSAWorksheet.html
-Factor a number:
-https://www.calculatorsoup.com/calculators/math/prime-factors.php
-"""
+"""Encrypts with the RSA cipher."""
     
 def generate_d(p, q, e):
+    """Generates the value of d for decryption."""
     J = (p-1)*(q-1)
     a = 0
     while (e * a) % J != 1:
