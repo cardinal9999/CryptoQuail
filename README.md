@@ -1,4 +1,6 @@
 # CryptoQuail
+
+![Stars](https://img.shields.io/github/stars/cardinal9999/cryptoquail?style=social)
 CryptoQuail's purpose is to extend the quality and features of other Python cryptography modules.
 ## Why CryptoQuail?
 With CryptoQuail, you can encrypt non-built-in objects like Pandas DataFrames.
