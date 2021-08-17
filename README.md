@@ -13,6 +13,8 @@ CryptoQuail uses a XOR cipher to encrypt and decrypt strings, but keys can easil
 2. Secure Random Number Generation
 3. RSA Encryption
 4. A List of Weak Passwords
+5. Secure Hashing (New!)
+6. Prime Number Generation (New!)
 ## Examples
 Encrypt a string:
 ```
