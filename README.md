@@ -17,7 +17,7 @@ CryptoQuail uses a XOR cipher to encrypt and decrypt strings, but keys can easil
 6. Prime Number Generation (New!)
 ## Examples
 Encrypt a string:
-```
+```py
 from cryptoquail import encryption
 print(encryption.encrypt_string("strawberry", "secret-key"))
 
