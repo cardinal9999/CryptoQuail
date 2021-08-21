@@ -9,5 +9,5 @@ wordlist1 = requests.get("https://raw.githubusercontent.com/redacted/XKCD-passwo
 a = []
 for chunk in wordlist1:
   a.append(chunk.decode())
-wordlist = "".join(a)
+wordlist = "\n".join(a)
  
