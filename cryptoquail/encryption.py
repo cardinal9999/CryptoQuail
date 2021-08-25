@@ -49,7 +49,7 @@ def decrypt_string(string, key):
     newstring = string[::-1].encode()
     newstring = base64.urlsafe_b64decode(newstring)
     newstring = newstring[::-1]
-    newstring = bytearray(newstring)
+    newstring = bytearray(newstring, encoding="utf-8")
     for i, num in enumerate(newstring):
         newstring[i] = foobar.crypt(num, keylist[i])
     newstring = "".join([chr(newstring[i]) for i in range(len(newstring))])
