@@ -8,13 +8,16 @@ With CryptoQuail, you can encrypt non-built-in objects like Pandas DataFrames.
 CryptoQuail's encryption module lets you encrypt strings without a long ciphertext. Some cryptography modules require you to create an object to encrypt and decrypt strings. The extra code can eat some of your bytes in the server's storage. Long ciphertexts can waste even more space in your server. CryptoQuail eliminates most side effects conventional encryptions affect your server.
 ## Is CryptoQuail Secure?
 CryptoQuail uses a XOR cipher to encrypt and decrypt strings, but keys can easily be brute-forced by a supercomputer if the keys isn't long enough. CryptoQuail doesn't solve the key distribution problem, so it's always good to have a program that encrypts the resulting ciphertext with RSA.
+
+CryptoQuail also has a block cipher. You can use it for more secure encryption.
 ## A list of features
 1. XOR Encryption
 2. Secure Random Number Generation
 3. RSA Encryption
 4. A List of Weak Passwords
-5. Secure Hashing (New!)
-6. Prime Number Generation (New!)
+5. Secure Hashing
+6. Prime Number Generation
+7. Block Ciphers (new!)
 ## Examples
 Encrypt a string:
 ```py
