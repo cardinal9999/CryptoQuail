@@ -32,3 +32,5 @@ To access the XKCD password generator, you must have requests installed.
 CryptoQuail helps endangered birds like Bobwhite Quails by donating to the National Bobwhite Conservation Initiative whenever a CryptoQuail application is downloaded.
 ## Why is it Named "CryptoQuail"?
 CryptoQuail was first named "CryptoPigeon", but the name was taken. CryptoQuail was the next best name.
+## Bugs and Glitches
+CryptoQuail has a lot of bugs. You can help by posting an issue at https://github.com/cardinal9999/CryptoQuail/issues.
