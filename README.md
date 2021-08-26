@@ -28,8 +28,6 @@ print(encryption.encrypt_string("strawberry", "secret-key"))
 ## Required Modules
 To access the XKCD password generator, you must have requests installed.
 
-## How CryptoQuail Helps Bobwhites
-CryptoQuail helps endangered birds like Bobwhite Quails by donating to the National Bobwhite Conservation Initiative whenever a CryptoQuail application is downloaded.
 ## Why is it Named "CryptoQuail"?
 CryptoQuail was first named "CryptoPigeon", but the name was taken. CryptoQuail was the next best name.
 ## Bugs and Glitches
