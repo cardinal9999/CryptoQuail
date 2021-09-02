@@ -19,4 +19,4 @@ Encrypt/decrypt a string:
 Random alphanumberic string:
 ``token_alphanumberic(13) //Required files: random.js``
 
-RSA will come soon.
+A link to CryptoQuail.js RSA tool: https://gist.github.com/cardinal9999/db065d4ba3031400e7d7b61251810adb
