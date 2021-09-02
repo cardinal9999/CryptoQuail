@@ -32,3 +32,9 @@ To access the XKCD password generator, you must have requests installed.
 CryptoQuail was first named "CryptoPigeon", but the name was taken. CryptoQuail was the next best name.
 ## Bugs and Glitches
 CryptoQuail has a lot of bugs. You can help by posting an issue at https://github.com/cardinal9999/CryptoQuail/issues.
+## The CryptoQuail Website
+Instead of creating a GitHub pages website (which can also eat lots of space in the package), I created some pages in a GitHub wiki.
+
+It has a CryptoQuail tutorial for Python CryptoQuail and CryptoQuail.js.
+
+[Visit the CryptoQuail Wiki](https://github.com/cardinal9999/CryptoQuail/wiki)
