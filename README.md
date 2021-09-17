@@ -18,6 +18,7 @@ CryptoQuail also has a block cipher. You can use it for more secure encryption.
 5. Secure Hashing
 6. Prime Number Generation
 7. Block Ciphers (new!)
+8. Dogescript (unfinished)
 ## Examples
 Encrypt a string:
 ```py
