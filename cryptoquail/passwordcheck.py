@@ -7,7 +7,7 @@ import string as string_
 from cryptoquail.util import weak_passwords
 
 global weak
-weak = week_passwords.weak_password_database
+weak = weak_passwords.weak_password_database
 
 def check_password(password):
     """checks a password
