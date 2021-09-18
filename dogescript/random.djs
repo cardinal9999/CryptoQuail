@@ -1,4 +1,4 @@
-very cryptoObj is window.crypto || window.msCrypto
+very cryptoObj is windoge.crypto || windoge.msCrypto
 
 such randbelow much max
 very array is new Uint16Array with 7
@@ -13,3 +13,14 @@ very x is max - min
 very dist is plz randbelow with x
 wow max - dist
 
+such choice much group
+wow group[randbelow(group.length)]
+
+such password much length
+very str is ""
+much very i is 0 next i smaller length next ++i 
+very chars is "qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP1234567890!@#$%^&*"
+str += choice(chars)
+
+wow
+wow str
