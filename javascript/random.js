@@ -19,10 +19,10 @@ export function choice(group) {
  return group[randbelow(group.length)];
 }
 
-export function alphanumeric(length) {
+export function password(length) {
   var str = "";
   for(var i = 0; i < length; ++i){
-    chars = "qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP1234567890";
+    chars = "qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP1234567890!@#$%^&*";
     str += choice(chars);
   }
   return str;
