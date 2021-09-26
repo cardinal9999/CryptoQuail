@@ -25,7 +25,7 @@ function encode(string) {
         number += charCodeAt(string[i]).toString(16);
     return number;
 }
-function crypt(input, key) {
+export function crypt(input, key) {
     var key = key.split('');
     var output = [];
     int1 = encode(key) % 20;
