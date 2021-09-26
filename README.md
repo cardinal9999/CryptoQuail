@@ -1,6 +1,6 @@
 # CryptoQuail
 
-![Stars](https://img.shields.io/github/stars/cardinal9999/cryptoquail?style=social)
+![Stars](https://img.shields.io/github/stars/cardinal9999/cryptoquail?style=social) [![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
 CryptoQuail's purpose is to extend the quality and features of other Python cryptography modules.
 ## Why CryptoQuail?
