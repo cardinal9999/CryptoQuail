@@ -10,5 +10,5 @@ def generate_d(p, q, e):
     return a
 def encrypt(m, n, e):
     return (m ** e) % n
-def decrypt(c, d, n):
-    return (c**d) % n
+def decrypt(c, n, d):
+    return (c**n) % d
