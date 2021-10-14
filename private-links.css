@@ -1,3 +1,8 @@
+/* == Private Links ==
+Inserting this stylesheet in your website prevents links from turning "followed".
+A link that isn't clicked is blue, but followed links are purple, and they reveal what links users clicked.
+This stylesheet will prevent that by changing followed links to the same color as unclicked links.*/
+
 a:link {color: royalblue;}
 a:visited {color: royalblue;}
 a:hover {color: deepskyblue;}
