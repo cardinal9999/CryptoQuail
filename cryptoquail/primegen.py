@@ -1,9 +1,9 @@
-def generate(range_, start):
+def generate(range_, start, start_prime=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107]):
   count = range_
   primes = []
   for p in range(count):
     i = p + start
-    prime  = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107]
+    prime = start_prime
     a = 0
     for x in prime:
         if (x ** (i-1)) % i == 1:
