@@ -9,6 +9,7 @@ def sha256(string):
 def sha512(string):
     return sha512_(string.encode()).hexdigest()
 def ψ_hash(string):
+    """Unfinished!!!!!! Do not use!"""
     if len(string) % 2 == 1:
         string = string + "d"
     a = ""
