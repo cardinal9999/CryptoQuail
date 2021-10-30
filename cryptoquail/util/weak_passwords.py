@@ -1,1 +1,1 @@
-from urllib.request import urlopen; weak_password_database = urlopen("https://raw.githubusercontent.com/cinno/weak_password_list/master/top_password_list.txt").read().decode().splitlines()
+from urllib.request import urlopen; weak_password_database = urlopen("https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-10000.txt").read().decode().splitlines()
