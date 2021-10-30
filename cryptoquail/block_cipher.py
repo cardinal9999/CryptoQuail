@@ -16,8 +16,9 @@ def encrypt(string, key, block_size):
             except:
                 block = block + chr(8)
         ciphertext.append(_encrypt(block, key))
-    return "".join(ciphertext)
+    return _encrypt("".join(ciphertext), key)
 def decrypt(string, key, block_size):
+    string = _decrypt(string, key)
     plaintext = []
     for i in range(len(string) // block_size + 1):
         block = ""
