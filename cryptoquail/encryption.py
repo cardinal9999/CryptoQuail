@@ -70,7 +70,7 @@ def decrypt_bytes(_bytes, key):
     int_ = foobar.text2number(key) % 30
     keylist = []
     for i in key:
-        keylist.append(ord(i) ^ int_ % 42
+        keylist.append(ord(i) ^ int_ % 42)
     while len(keylist) < len(_bytes):
         keylist = keylist * 2
     newbytes = bytearray(_bytes)
