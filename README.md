@@ -10,6 +10,17 @@ CryptoQuail's encryption module lets you encrypt strings without a long cipherte
 CryptoQuail uses a XOR cipher to encrypt and decrypt strings, but keys can easily be brute-forced by a supercomputer if the keys isn't long enough. CryptoQuail doesn't solve the key distribution problem, so it's always good to have a program that encrypts the resulting ciphertext with RSA.
 
 CryptoQuail also has a block cipher. You can use it for more secure encryption.
+
+## Installation
+Open your Git CMD and type:
+```shell
+git clone "https://github.com/cardinal9999/CryptoQuail"
+cd CryptoQuail
+py
+```
+
+Use `import cryptoquail` to import the CryptoQuail Package.
+
 ## A list of features
 1. XOR Encryption
 2. Secure Random Number Generation
