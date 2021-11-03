@@ -11,7 +11,7 @@ CryptoQuail uses a XOR cipher to encrypt and decrypt strings, but keys can easil
 
 CryptoQuail also has a block cipher. You can use it for more secure encryption.
 
-## Installation
+## 📦 Installation
 Open your Git CMD and type:
 ```shell
 git clone "https://github.com/cardinal9999/CryptoQuail"
@@ -21,14 +21,16 @@ py
 
 Use `import cryptoquail` to import the CryptoQuail Package.
 
-## A list of features
-1. XOR Encryption
-2. Secure Random Number Generation
-3. RSA Encryption
-4. A List of Weak Passwords
-5. Secure Hashing
-6. Prime Number Generation
-7. Block Ciphers
+To use CryptoQuail in IDLE, move the `cryptoquail` folder to the directory your Python programs are in.
+
+## 🌟 Features
+1. 🔐 Complex XOR Encryption
+2. 🎲 Secure Random Number Generation
+3. 🔏 RSA Encryption
+4. 🔑 A List of Weak Passwords
+5. #️⃣ Secure Hashing
+6. 🔢 Prime Number Generation
+7. 🪛 Block Ciphers
 ## Examples
 Encrypt a string:
 ```py
@@ -39,18 +41,25 @@ print(encryption.encrypt_string("strawberry", "secret-key"))
 ## Required Modules
 To access the XKCD password generator, you must have requests installed.
 
-## The CryptoQuail Website
+## 💻 The CryptoQuail Website
 Instead of creating a GitHub pages website (which can also eat lots of space in the package), I created some pages in a GitHub wiki.
 
 It has a CryptoQuail tutorial for Python CryptoQuail and CryptoQuail.js.
 
 [Visit the CryptoQuail Wiki](https://github.com/cardinal9999/CryptoQuail/wiki)
 
+## 🎯 CryptoQuail Translations
+CryptoQuail has been "translated" into other programming languages.
+
+[View all translations](https://github.com/cardinal9999/CryptoQuail-Translations/)
+
+Note that the translations are very different from the Python version.
+
 ```diff
 - Warning: When a message is encrypted with Python CryptoQuail, it can not be recovered with CryptoQuail in any other programming language.
 ```
 ## Why is it Named "CryptoQuail"?
 CryptoQuail was first named "CryptoPigeon", but the name was taken. CryptoQuail was the next best name.
-## Bugs and Glitches
+## 👾 Bugs and Glitches
 CryptoQuail has a lot of bugs. You can help by posting an issue at https://github.com/cardinal9999/CryptoQuail/issues.
 
