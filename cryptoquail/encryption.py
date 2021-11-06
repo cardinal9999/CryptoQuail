@@ -45,9 +45,9 @@ def decrypt_string(string, key):
     while len(keylist) < len(string):
         keylist = keylist * 2
 
-    newstring = string[::-1]
+    newstring = list(string[::-1])
     for i, num in enumerate(newstring):
-        newstring[i] = foobar.crypt(num, keylist[i])
+        newstring[i] = foobar.crypt(ord(num), keylist[i])
     newstring = "".join([chr(newstring[i]) for i in range(len(newstring))])
     return newstring
 
