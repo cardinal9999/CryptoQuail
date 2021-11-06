@@ -15,7 +15,7 @@ except ModuleNotFoundError:
     warn("some features may not work because secrets module is not supported")
 
 __all__ = ["encrypt_string", "decrypt_string", "encrypt_bytes", "decrypt_bytes",
-           "encrypt_image", "decrypt_image", "encrypt_object", "decrypt_object"]
+           "encrypt_object", "decrypt_object", "salt", "unsalt"]
 
 def encrypt_string(string, key):
     if secrets.compare_digest(key, "") == True or key == None:
