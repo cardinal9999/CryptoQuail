@@ -31,8 +31,6 @@ def encrypt_string(string, key):
         newstring[i] = chr(foobar.crypt(ord(char), keylist[i]))
     newstring = newstring[::-1]
     newstring = "".join(newstring)
-    newstring = base64.urlsafe_b64encode(bytes(newstring, encoding="utf-8")).decode()
-    newstring = newstring[::-1]
     str1 = list(newstring)
     return "".join(str1)
 def decrypt_string(string, key):
@@ -46,8 +44,7 @@ def decrypt_string(string, key):
         keylist.append(ord(i) ^ int_ % 100)
     while len(keylist) < len(string):
         keylist = keylist * 2
-    newstring = string[::-1].encode()
-    newstring = base64.urlsafe_b64decode(newstring)
+    newstring = string.encode()
     newstring = newstring[::-1]
     newstring = bytearray(newstring, encoding="utf-8")
     for i, num in enumerate(newstring):
