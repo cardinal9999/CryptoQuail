@@ -7,20 +7,22 @@ from warnings import warn
 import pickle
 import json
 import base64
-from cryptoquail.util import foobar, errors as exceptions
+from cryptoquail.util import foobar, errors as exceptions, transposition as trans
 
 try:
     import secrets
 except ModuleNotFoundError:
     warn("some features may not work because secrets module is not supported")
 
-__all__ = ["encrypt_string", "decrypt_string", "encrypt_bytes", "decrypt_bytes",
-           "encrypt_object", "decrypt_object", "salt", "unsalt"]
+__all__ = ["encrypt_string", "decrypt_string",
+           "encrypt_object", "decrypt_object",
+           "salt", "unsalt"]
 
 def encrypt_string(string, key):
     if secrets.compare_digest(key, "") == True or key == None:
         raise exceptions.EmptyKeyError("key must not be a null value")
     int_ = foobar.text2number(key) % 30
+    
     keylist = []
     for i in key:
         keylist.append(ord(i) ^ int_ % 100)
@@ -32,12 +34,14 @@ def encrypt_string(string, key):
     newstring = newstring[::-1]
     newstring = "".join(newstring)
     str1 = list(newstring)
-    return "".join(str1)
+    _int_ = foobar.text2number(key) % (len(newstring) // 1.5)
+    return trans.enc("".join(str1), _int_)
 def decrypt_string(string, key):
     if secrets.compare_digest(key, "") == True:
         raise exceptions.EmptyKeyError("key must not be a null value")
     str1 = list(string)
-    string = "".join(str1)
+    _int_ = foobar.text2number(key) % (len(newstring) // 1.5)
+    string = trans.dec("".join(str1), _int_)
     int_ = foobar.text2number(key) % 30
     keylist = []
     for i in key:
@@ -51,28 +55,7 @@ def decrypt_string(string, key):
     newstring = "".join([chr(newstring[i]) for i in range(len(newstring))])
     return newstring
 
-def encrypt_bytes(_bytes, key):
-    int_ = foobar.text2number(key) % 30
-    keylist = []
-    for i in key:
-        keylist.append(ord(i) ^ int_ % 42)
-    while len(keylist) < len(_bytes):
-        keylist = keylist * 2
-    newbytes = bytearray(_bytes)
-    for i, val in enumerate(newbytes):
-        newbytes[i] = foobar.crypt(val, keylist[i])
-    return bytes(newbytes)
-def decrypt_bytes(_bytes, key):
-    int_ = foobar.text2number(key) % 30
-    keylist = []
-    for i in key:
-        keylist.append(ord(i) ^ int_ % 42)
-    while len(keylist) < len(_bytes):
-        keylist = keylist * 2
-    newbytes = bytearray(_bytes)
-    for i, val in enumerate(newbytes):
-        newbytes[i] = foobar.crypt(val, keylist[i])
-    return bytes(newbytes)
+
 def encrypt_object(_object, key):
     if secrets.compare_digest(key, "") == True:
         raise exceptions.EmptyKeyError("key must not be empty")
