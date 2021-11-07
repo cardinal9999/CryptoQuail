@@ -40,7 +40,7 @@ def decrypt_string(string, key):
     if secrets.compare_digest(key, "") == True:
         raise exceptions.EmptyKeyError("key must not be a null value")
     str1 = list(string)
-    _int_ = foobar.text2number(key) % int(len(newstring) // 1.5)
+    _int_ = foobar.text2number(key) % int(len(string) // 1.5)
     string = trans.dec("".join(str1), _int_)
     int_ = foobar.text2number(key) % 30
     keylist = []
