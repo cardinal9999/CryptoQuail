@@ -1,4 +1,6 @@
 """
+(!) NOT TESTED. NOT FOR REAL APPLICATIONS (!)
+
 CryptoQuail block cipher
 ----------------------------
 This cipher increases the security of the cipher by hiding the length of a message.
