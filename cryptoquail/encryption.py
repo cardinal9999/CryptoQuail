@@ -1,5 +1,5 @@
 #CryptoQuail Encryption
-"""Encrypt and decrypt strings, bytes, or Python objects.
+"""Encrypt and decrypt strings.
 """
 
 import string as string_
@@ -35,13 +35,13 @@ def encrypt_string(string, key):
     newstring = "".join(newstring)
     str1 = list(newstring)
     _int_ = foobar.text2number(key) % int(len(newstring) // 1.5)
-    return trans.enc("".join(str1), _int_)
+    return trans.enc("".join(str1), _int_ + 1)
 def decrypt_string(string, key):
     if secrets.compare_digest(key, "") == True:
         raise exceptions.EmptyKeyError("key must not be a null value")
     str1 = list(string)
     _int_ = foobar.text2number(key) % int(len(string) // 1.5)
-    string = trans.dec("".join(str1), _int_)
+    string = trans.dec("".join(str1), _int_ + 1)
     int_ = foobar.text2number(key) % 30
     keylist = []
     for i in key:
