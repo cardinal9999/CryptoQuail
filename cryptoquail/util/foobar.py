@@ -1,8 +1,6 @@
-import random
-import secrets
+import random, secrets
 
 __all__ = ["crypt", "text2number", "compare_digest", "random_delay", "csprng"]
-
 
 def crypt(a, key):
     return a ^ key
@@ -23,5 +21,4 @@ def random_delay():
     return None
 
 compare_digest = secrets.compare_digest
-
 csprng = secrets.SystemRandom
