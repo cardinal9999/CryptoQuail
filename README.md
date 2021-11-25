@@ -30,7 +30,7 @@ To use CryptoQuail in IDLE, move the `cryptoquail` folder to the directory your 
 4. 🔑 A List of Weak Passwords
 5. #️⃣ Secure Hashing
 6. 🔢 Prime Number Generation
-7. 🪛 Block Ciphers
+
 ## Examples
 Encrypt a string:
 ```py
