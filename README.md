@@ -6,6 +6,8 @@ CryptoQuail's purpose is to extend the quality and features of other Python cryp
 ## Why CryptoQuail?
 With CryptoQuail, you can encrypt non-built-in objects like Pandas DataFrames.
 CryptoQuail's encryption module lets you encrypt strings without a long ciphertext. Some cryptography modules require you to create an object to encrypt and decrypt strings. The extra code can eat some of your bytes in the server's storage. Long ciphertexts can waste even more space in your server. CryptoQuail eliminates most side effects conventional encryptions affect your server.
+
+CryptoQuail can also be used for code obfuscation.
 ## Is CryptoQuail Secure?
 CryptoQuail uses a mixture of 2 XOR ciphers and a transposition cipher to encrypt and decrypt strings, but keys can easily be brute-forced by a supercomputer if the keys isn't long enough. CryptoQuail creates some avalanche effect, but a similar value can appear once in every few ciphertexts.
 
