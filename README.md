@@ -1,9 +1,14 @@
 # CryptoQuail
 
-![Stars](https://img.shields.io/github/stars/cardinal9999/cryptoquail?style=social) [![Actively Maintained](https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
+![Stars](https://img.shields.io/github/stars/cardinal9999/cryptoquail?style=social)
+
+---
+## NOT MAINTAINED ANYMORE 
+>https://github.com/cardinal9999/cryptoquail_cipher
+---
 
 CryptoQuail's purpose is to extend the quality and features of other Python cryptography modules.
-## Why CryptoQuail?
+### Why CryptoQuail?
 With CryptoQuail, you can encrypt non-built-in objects like Pandas DataFrames.
 CryptoQuail's encryption module lets you encrypt strings without a long ciphertext. Some cryptography modules require you to create an object to encrypt and decrypt strings. The extra code can eat some of your bytes in the server's storage. Long ciphertexts can waste even more space in your server. CryptoQuail eliminates most side effects conventional encryptions affect your server.
 
